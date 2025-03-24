@@ -55,24 +55,24 @@ def general_style():
 
 def th1_style():
     """Define the style settings for TH1 histograms."""
-    style = general_style()
-    style.SetName('TH1Style')
+    styleh1 = ROOT.TStyle('Th1S', 'Th1Style by AF')
+    general_style().Copy(styleh1)
     
     # Custom palette
     hex_colors = ["#3f90da", "#ffa90e", "#bd1f01", "#94a4a2", "#832db6", "#a96b59", "#e76300", "#b9ac70", "#92dadd"]
     colors = [ROOT.TColor.GetColor(hex) for hex in hex_colors]
     myPalette = np.array(colors, dtype=np.int32)
-    style.SetPalette(9, myPalette)
+    styleh1.SetPalette(9, myPalette)
     
     # Adjust right margin for TH1
-    style.SetPadRightMargin(0.05)
-    return style
+    styleh1.SetPadRightMargin(0.05)
+    return styleh1
 
 def th2_style():
     """Define the style settings for TH2 histograms."""
-    style = general_style()
-    style.SetName('TH2Style')
+    styleh2 = ROOT.TStyle('Th2S', 'Th2S Style by AF')
+    general_style().Copy(styleh2)
     
     # Adjust right margin for TH2 to accommodate color bar
-    style.SetPadRightMargin(0.145)
-    return style
+    styleh2.SetPadRightMargin(0.145)
+    return styleh2
