@@ -47,7 +47,9 @@ def general_style():
     style.SetLegendFillColor(-1)
     
     # Other options
-    style.SetLineWidth(2)
+    style.SetMarkerStyle(1)
+    style.SetLineWidth(1)
+    
     style.SetFillStyle(4000)
     return style
 
