@@ -75,7 +75,7 @@ def th2_style():
     general_style().Copy(styleh2)
     
     # Adjust right margin for TH2 to accommodate color bar
-    styleh2.SetPadRightMargin(0.155)
+    styleh2.SetPadRightMargin(0.165)
     # styleh2.SetCanvasDefW(700)
     
     return styleh2
