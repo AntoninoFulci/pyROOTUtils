@@ -34,9 +34,9 @@ def general_style():
     style.SetTitleSize(0.04, "")
     style.SetTitleFont(132, "")
     style.SetTitleFont(132, "xyz")
-    style.SetTitleOffset(1.3, "y")
+    style.SetTitleOffset(1.35, "y")
     style.SetTitleOffset(1.2, "x")
-    style.SetTitleOffset(1.4, "z")
+    style.SetTitleOffset(1.45, "z")
     
     # Label options
     style.SetLabelSize(0.04, "xyz")
