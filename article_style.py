@@ -34,8 +34,9 @@ def general_style():
     style.SetTitleSize(0.04, "")
     style.SetTitleFont(132, "")
     style.SetTitleFont(132, "xyz")
-    style.SetTitleOffset(1.1, "y")
-    style.SetTitleOffset(1.1, "x")
+    style.SetTitleOffset(1.2, "y")
+    style.SetTitleOffset(1.2, "x")
+    style.SetTitleOffset(1.2, "z")
     
     # Label options
     style.SetLabelSize(0.04, "xyz")
@@ -75,4 +76,6 @@ def th2_style():
     
     # Adjust right margin for TH2 to accommodate color bar
     styleh2.SetPadRightMargin(0.145)
+    styleh2.SetPadRightMargin(0.145)
+    
     return styleh2
