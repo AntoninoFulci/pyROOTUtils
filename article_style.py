@@ -12,7 +12,7 @@ def general_style():
     style.SetImageScaling(2.)
     
     # Canvas options
-    style.SetCanvasDefW(500)
+    style.SetCanvasDefW(600)
     style.SetCanvasDefH(500)
     style.SetCanvasColor(0)
     style.SetTitleFillColor(0)
@@ -30,12 +30,12 @@ def general_style():
     style.SetPalette(55, 0)
     
     # Title options
-    style.SetTitleSize(0.043, "xyz")
-    style.SetTitleSize(0.05, "")
+    style.SetTitleSize(0.04, "xyz")
+    style.SetTitleSize(0.04, "")
     style.SetTitleFont(132, "")
     style.SetTitleFont(132, "xyz")
-    style.SetTitleOffset(1.4, "y")
-    style.SetTitleOffset(1.25, "x")
+    style.SetTitleOffset(1.1, "y")
+    style.SetTitleOffset(1.1, "x")
     
     # Label options
     style.SetLabelSize(0.04, "xyz")
@@ -65,7 +65,7 @@ def th1_style():
     styleh1.SetPalette(9, myPalette)
     
     # Adjust right margin for TH1
-    styleh1.SetPadRightMargin(0.05)
+    styleh1.SetPadRightMargin(0.08)
     return styleh1
 
 def th2_style():
